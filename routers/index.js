@@ -3,8 +3,6 @@ const router = express.Router();
 const fs = require('fs');
 const path = require('path');
 const settings = require('../setting.json')
-const wikiName = settings.name;
-const mainPage = settings.main_page;
 
 router.get('/', (req, res, next) => {
     res.redirect(`/${mainPage}`);
