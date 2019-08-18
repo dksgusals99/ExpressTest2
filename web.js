@@ -16,7 +16,6 @@ app.set('views', path.join(__dirname, 'views'));
 app.use('/',require('./routers/index'));
 app.use('/user',require('./routers/user'));
 app.use('/media',require('./routers/media'));
-app.use('/w',require('./routers/w'));
 app.use(require('./routers/error'));
 
 app.listen(8080, function () {

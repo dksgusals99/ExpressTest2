@@ -2,13 +2,8 @@ const express = require('express');
 const router = express.Router();
 const fs = require('fs');
 const path = require('path');
-const settings = require('../setting.json')
 
 router.get('/', (req, res, next) => {
-    res.redirect(`/${mainPage}`);
-});
-
-router.get(encodeURI(`/${mainPage}`), (req, res, next) => {
     res.render('index')
 });
 
